@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgba(56, 133, 129, 0.315);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  padding: 1rem 3rem;
+}
+.navbar .logo{
+letter-spacing: 3px;
+}
+.navbar .basket{
+  position: relative;
+}
+.navbar .basket p{
+  font-size: 2.5rem;
+}
+.navbar .basket div{
+  font-size: 1.4rem;
+  position: absolute;
+  top: -15%;
+  right: -35%;
+  background-color: rgb(74, 74, 156);
+  padding: 0 .5rem;
+  border-radius: 50%;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: rgb(90, 87, 87);
+}
+.home .list{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+.home .list .param {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+}
+.home .list .param img{
+ width: 5rem;
+}
+.home .list .param .left{
+  display: flex;
+  align-items: center;
+}
+.home .list .param .left .source h1{
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.home .list  .param .left .source button{
+  border: none;
+  background: transparent;
+  letter-spacing: 3px;
+  color: grey;
+  cursor: pointer;
+}
+.home .list .param .right{
+  text-align: center;
+}
+.home .list .param .right button{
+  border: none;
+  background: transparent;
+  color: blue;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.home .total{
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  border-top: 2px solid blue;
+  padding: 1rem;
+  letter-spacing:2px;
+}
+.home .total p{
+  color: rgb(16, 16, 49);
+  font-weight: bold;
+}
+.home .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.home .buttons button{
+  background: transparent;
+  letter-spacing: 5px;
+  padding:.5rem 1rem;
+  border-radius: .3rem;
+  font-weight: 800; 
+  margin: 1rem;
+  cursor: pointer;
+  width: 15rem;
+}
+.home .added{
+  color: green;
+  border-color: green;
+}
+.home .clear{
+  color: brown;
+  border-color: brown;
+}
+.error{
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+.add_phone form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+.add_phone form label{
+ font-weight: bold;
+ color: rgb(73, 72, 72);
+}
+.add_phone form input{
+padding: .5rem;
+font-size: 1.1rem;
+border-radius: .3rem;
+outline: none;
+border-color: blue;
+width: 30vw;
+}
+.add_phone form .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.add_phone form button{
+  background: transparent;
+  border-color: blue;
+  padding: .5rem 1.5rem;
+  border-radius: .3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 7rem;
+}
+.add_phone form .buttons .home{
+  border-color: green;
+}
+@media only screen and (max-width:900px) {
+  .add_phone form input{
+    width: 50vw;
+    }
+}
+@media only screen and (max-width:600px) {
+  .add_phone form input{
+    width: 70vw;
+    }
+}
